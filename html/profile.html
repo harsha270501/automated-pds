@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Automated PDS</title>
+	<link rel="stylesheet" type="text/css" href="../profstyles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="../js/graph.js"></script>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #163b6b;color: white;">
+		  <a class="navbar-brand" href="#">Automated PDS</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item ">
+		        <a class="nav-link" href="#">Dashboard<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Logout</a>
+		      </li>
+		    </ul>
+		  </div>
+	</nav>
+	
+	
+		<div id="dashboard">
+			<div id="profile">
+				<div id="user-prof-head">
+					<h5>User Profile</h5>
+				</div>
+				<div id="user-prof">
+					<i class="fa fa-user-circle" style="font-size:100px;"></i>
+				</div>
+				<div id="user-det">
+					<p>Name : ..</p>
+					<p>Ration ID: .. </p>
+					<p>Family ID: ..</p>
+					<p style="margin-top: 10px;">Family Memebers Name: </p>
+				</div>
+			</div>
+
+			<div id="det">
+				<div id="graph-disp">
+					<div id="graph-header">Monthly Update</div>
+					<div id="chartContainer"></div>
+				</div>
+
+				<div id="extra">
+					<div id="gas-conn">
+						<div id="gas-conn-header">Gas Connections</div>
+						<div id="content"><p>..</p></div>
+					</div>
+
+					<div id="gas-conn" style="margin-left: 50px">
+						<div id="gas-conn-header">Ration Type</div>
+						<div id="content"><p>..</p></div>
+					</div>
+
+					<div id="gas-conn" style="margin-left:50px">
+						<div id="gas-conn-header">Scheme Availed</div>
+						<div id="content"><p>..</p></div>
+					</div>
+					</div>
+				
+			</div>
+		</div>		
+	
+</body>
+</html>
