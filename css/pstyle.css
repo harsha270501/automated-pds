@@ -27,14 +27,16 @@ h1:hover
 {
 	transform: scale(1.1);
 }
-a
+#Purchase
 {
-	text-decoration: none;
-	color: white;
-}
-#Dashboard
-{
+	padding-top:30px;
+	padding-left: 30px;
+	padding-right: 20px;
 	background-color: ivory;
+	margin-left: 25%;
+	width:700px;
+	padding-bottom: 100px;
+	margin-top: 2%
 }
 .gallery
 {
@@ -62,3 +64,16 @@ i
 {
 	margin-top: 40px;
 }
+
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
