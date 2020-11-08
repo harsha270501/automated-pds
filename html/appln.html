@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Application Portal</title>
+	<link rel="stylesheet" type="text/css" href="../css/applnstyles.css">
+	
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+</head>
+<body style="background-color: #FFFFF0;">
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		  <a class="navbar-brand" href="#"><h3>Ration Card Application Portal</h3></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#" style="text-decoration: none;color: white;">Home</a>
+		      </li>
+		    </ul>
+		  </div>
+	</nav>
+	<section id="Dashboard"> 
+		
+				<form>
+					<fieldset class="disp-form" id="disp-common">
+					  
+					  <div class="form-group" style="margin-left: 40px;display: inline-block;width: 46%;">
+					    <label for="appname">Applicant Name</label>
+					    <input type="text" class="form-control" id="appname" placeholder="Enter Applicant name">
+					  </div>
+
+					  <div class="form-group" style="display: inline-block;width: 46%;">
+					    <label for="fhname">Family Head Name</label>
+					    <input type="text" class="form-control" id="fhname" placeholder="Enter Family Head Name">
+					  </div>
+
+					  <div class="form-group" style="margin-left: 40px;display: inline-block;width: 15%;">
+					    <label for="dno">Door Number</label>
+					    <input type="text" class="form-control" id="dno" placeholder="Enter Door No">
+					  </div>
+					
+					  <div class="form-group"style="display: inline-block;width: 35%;">
+					    <label for="st">Street Name</label>
+					    <input type="text" class="form-control" id="st" placeholder="Enter Street Name">
+					  </div>
+
+					  <div class="form-group" style="display: inline-block;width: 41%;">
+					    <label for="area">Area</label>
+					    <input type="text" class="form-control" id="area" placeholder="Enter Area">
+					  </div>
+
+					  <div class="form-group" style="margin-left:40px; display: inline-block;width: 38%;"> 
+					    <label for="City">City</label>
+					    <input type="text" class="form-control" id="city" placeholder="Enter City">
+					  </div>
+
+					  <div class="form-group" style="display: inline-block;width: 40%;">
+					    <label for="state">State</label>
+					    <input type="text" class="form-control" id="state" placeholder="Enter State">
+					  </div>
+
+					  <div class="form-group" style="display: inline-block;width: 15%;">
+					    <label for="pinc">Pin Code</label>
+					    <input type="text" class="form-control" id="pinc" placeholder="Enter Pin Code">
+					  </div>
+					
+					</fieldset>
+				</form>
+				
+				
+		<div class="forms" style="display: flex;flex-wrap: wrap;">	
+		<div class="appln-form" id="appln-form-1" >
+				<form>
+				  <fieldset class="disp-form" id="disp-personal">
+				  <legend style="color: white; width: 30%; margin-left: 10px;border-radius:5px; text-align: center;">Personal Details</legend>
+				  <div class="form-group" style="margin-left: 20px;display: inline-block;width: 40%;">
+				    <label for="gender">Gender</label>
+				    <select class="form-control" id="gender">
+				      <option>Female</option>
+				      <option>Male</option>
+				      <option>Other</option>
+				    </select>
+				  </div>
+
+				  <div class="form-group" style="display: inline-block;width: 40%;">
+				    <label for="bgrp">Blood group</label>
+				    <input type="text" class="form-control" id="fhname" placeholder="Blood Group">
+				  </div>
+
+				   <div class="form-group" style="display:inline-block;margin-left:20px;width: 30%;">
+				    <label for="dob">DOB</label>
+				    <input type="date" class="form-control" id="dob" placeholder="Enter DOB">
+				  </div>
+
+				  <div class="form-group" style="margin-left:10px;display: inline-block;width: 25%;"> 
+				  	
+				    Marital Status
+				    <input type="checkbox" class="form-control" id="marstatus" placeholder="Enter City">
+					
+				  </div>
+
+				  <div class="form-group" style="display: inline-block;width: 35%;">
+				  	
+				    Physically Challenged
+				    <input type="checkbox" class="form-control" id="phych" placeholder="Enter State">
+				  	
+				  </div>
+
+				  <div class="form-group" style="margin-left:20px;width: 95%;">
+				    <label for="email">Email ID</label>
+				    <input type="email" class="form-control" id="email" placeholder="Enter Email ID">
+				  </div>
+				
+				  <div class="form-group"style="margin-left: 20px;display: inline-block;width: 46%;">
+				    <label for="caste">Caste</label>
+				    <input type="text" class="form-control" id="caste" placeholder="Enter Caste">
+				  </div>
+
+				  <div class="form-group" style="display: inline-block;width: 46%;">
+				    <label for="Occupation">Occupation</label>
+				    <input type="text" class="form-control" id="Occupation" placeholder="Enter Occupation">
+				  </div>
+
+
+				  <div class="form-group" style="margin-left: 20px;width: 95%;">
+				    <label for="aadh">Aadhar Number</label>
+				    <input type="text" class="form-control" id="aadh" placeholder="xxxx-xxxx-xxxx">
+				  </div>
+
+				  <div class="form-group" style="margin-left: 20px;width: 95%;">
+				    <label for="vid">Voter ID</label>
+				    <input type="text" class="form-control" id="vid" placeholder="Voter ID">
+				  </div>
+
+				  <div class="form-group" style="margin-left: 20px;width: 95%;">
+				    <label for="pcard">PAN Card Number</label>
+				    <input type="text" class="form-control" id="pcard" placeholder="PAN Card Number">
+				  </div>
+
+				  <div class="form-group" style="margin-left: 20px;width: 95%;">
+				    <label for="dlnum">Driving License Number</label>
+				    <input type="text" class="form-control" id="dlnum" placeholder="Driving License number">
+				  </div>
+				
+				</fieldset>
+				</form>
+					
+		</div>
+		<div class="appln-form" id="appln-form-2">
+			
+				<form>
+				  <fieldset class="disp-form" id="disp-bank">
+				  <legend style="color: white; width: 30%; margin-left: 10px;border-radius:5px; text-align: center;">Bank Details</legend>
+				  
+
+				  <div class="form-group" style="margin-left: 20px;width: 95%;">
+				    <label for="bname">Bank Name</label>
+				    <input type="text" class="form-control" id="bname" placeholder="Enter Bank Name">
+				  </div>
+
+				  <div class="form-group" style="margin-left: 20px;width: 95%;">
+				    <label for="accnum">Account Number</label>
+				    <input type="text" class="form-control" id="accnum" placeholder="Enter Account Number">
+				  </div>
+
+				  <div class="form-group" style="margin-left: 20px;width: 95%;">
+				    <label for="ifsc">IFSC Code</label>
+				    <input type="text" class="form-control" id="ifsc" placeholder="Enter IFSC Code">
+				  </div>
+				
+				</fieldset>
+				</form>
+
+		
+				<form style="margin-top: 20px;">
+				  <fieldset class="disp-form" id="disp-bank">
+				  <legend style="color: white; width: 30%; margin-left: 10px;border-radius:5px; text-align: center;">Additional Details</legend>
+				  
+
+				  <div class="form-group" style="margin-left: 20px;width: 95%;">
+				    <label for="resstatus">Residential Status</label>
+				    <input type="text" class="form-control" id="bname" placeholder="Enter Bank Name">
+				  </div>
+
+				  <div class="form-group" style="margin-left: 20px;width: 95%;">
+				    <label for="ecostatus">Economic Status</label>
+				    <input type="text" class="form-control" id="accnum" placeholder="Enter Account Number">
+				  </div>
+
+				  <div class="form-group" style="margin-left: 20px;width: 95%;">
+				    <label for="oldration">Old Ration Number</label>
+				    <input type="text" class="form-control" id="ifsc" placeholder="Enter IFSC Code">
+				  </div>
+				
+				</fieldset>
+				</form>
+			
+		</div>
+
+		</div>
+
+		<button type="button" class="btn btn-success" style="margin-left:50%;margin-top: 20px;margin-bottom: 10px;">Apply</button>
+
+	</section>
+</body>
+</html>
