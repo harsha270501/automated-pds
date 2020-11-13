@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dashboard</title>
-	<link rel="stylesheet" type="text/css" href="../css/tpdsdstyle.css">
+	<title>FPS Officer Application Portal</title>
+	<link rel="stylesheet" type="text/css" href="../css/fpsoffapln.css">
 	
 	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -16,7 +16,7 @@
 </head>
 <body style="background-color: #FFFFF0">
 	<nav class="navbar navbar-expand-lg navbar-dark">
-		  <a class="navbar-brand" href="#"><h3>TPDS Officer Dashboard</h3></a>
+		  <a class="navbar-brand" href="#"><h3>FPS Officer Application Portal</h3></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -31,53 +31,52 @@
 		    </ul>
 		  </div>
 	</nav>
-	<section id="Dashboard"> 
-		<div class="gallery">
-			<div class="carddet" id="card1">
-				<div id="card-image">
-					
-				</div>
-				<div id="card-title">
-					<h5><a href="#" style="text-decoration: none; color: white;">Review Application for New card</a></h5>
-				</div>
-			</div>
-			<div class="carddet" id="card2">
-				<div id="card-image">
-					
-				</div>
-				<div id="card-title">
-					<h5><a href="#" style="text-decoration: none; color: white;">Review Application for Editing Details</a></h5>
-				</div>
-			</div>
-			<div class="carddet" id="card3">
-				<div id="card-image">
-					
-				</div>
-				<div id="card-title">
-					<h5><a href="#" style="text-decoration: none; color: white;">Register New FPS Office/Officer</a> </h5>
-				</div>
-			</div>
+		<section id="Dashboard">
+		<form >
+				  <fieldset class="disp-form" id="disp-fps">
+				  <legend style="color: white; width: 30%; margin-left: 10px;border-radius:5px; text-align: center;">FPS OFFICER</legend>
+				  
 
-			<div class="carddet" id="card4">
-				<div id="card-image">
-					
-				</div>
-				<div id="card-title">
-					<h5><a href="#" style="text-decoration: none; color: white;">Change Scheme</a></h5> 
-				</div>
-			</div>
+				  <div class="form-group">
+				    <label for="offid">Officer ID</label>
+				    <input type="text" class="form-control" id="offid" placeholder="Assign Officer ID">
+				  </div>
 
-			<div class="carddet" id="card5">
-				<div id="card-image">
-					
-				</div>
-				<div id="card-title">
-					<h5><a href="#" style="text-decoration: none; color: white;">Authorize Stakeholder</a></h5> 
-				</div>
-			</div>
-		</div>
+				   <div class="form-group">
+				    <label for="offName">Name</label>
+				    <input type="date" class="form-control" id="offName" placeholder="Enter Officer's Name">
+				  </div>
+
+				  <div class="form-group">
+				    <label for="offEmail">Email ID</label>
+				    <input type="email" class="form-control" id="offEmail" placeholder="Enter Officer's Email ID">
+				  </div>
+				
+				  <div class="form-group">
+				    <label for="offph">Phone</label>
+				    <input type="text" class="form-control" id="offph" placeholder="Enter Officer's Phone Number">
+				  </div>
+
+				  <div class="form-group">
+				    <label for="offDOB">DOB</label>
+				    <input type="date" class="form-control" id="Occupation" placeholder="Enter Officer's DOB">
+				  </div>
 
 
+				  <div class="form-group">
+				    <label for="offRank">Rank</label>
+				    <input type="text" class="form-control" id="offRank" placeholder="Enter Officer's Rank">
+				  </div>
+
+				  <div class="form-group">
+				    <label for="offFPSCode">FPS CODE</label>
+				    <input type="text" class="form-control" id="offFPSCode" placeholder="Enter FPS Code">
+				  </div>
+
+				  <button type="button" class="btn btn-outline-danger" style="margin-top: 20px;margin-left: 45%;">Submit</button>
+				
+			</fieldset>
+			</form>
 	</section>
 </body>
 </html>
