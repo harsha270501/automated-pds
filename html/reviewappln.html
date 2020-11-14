@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Dashboard</title>
-	<link rel="stylesheet" type="text/css" href="../css/tpdsdstyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/reviewappln.css">
 	
 	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -38,11 +38,11 @@
 				<input type="text" class="form-control" id="applncode" placeholder="Enter Application Code">
 			</div>
 
-			<button type="button" class="btn btn-outline-danger" style="margin-left: 12%;display: inline-block;margin-top: 20px;">Download Application Form</button>
+			<button type="button" class="btn btn-outline-danger" style="margin-left: 5%;display: inline-block;margin-top: 8px;">Download Application Form</button>
 		</form>
 		<form >
 			<fieldset class="disp-form" id="disp-fps">
-			<legend style="color: white; width: 30%; margin-left: 10px;border-radius:5px; text-align: center;">FPS OFFICE</legend>
+			<legend style="color: white; width: 30%; margin-left: 10px;border-radius:5px; text-align: center;">Verify Details</legend>
 			
 
 			<div class="form-group">
@@ -55,7 +55,7 @@
 
 			 <div class="form-group">
 			  <label for="locid">Location ID</label>
-			  <input type="date" class="form-control" id="locid" placeholder="Enter Location ID">
+			  <input type="text" class="form-control" id="locid" placeholder="Enter Location ID">
 			</div>
 
 			<div class="form-group">
@@ -64,58 +64,12 @@
 			</div>
 		  
 			<div class="form-group">
-			  <label for="fpsOwnName">Owner Name</label>
-			  <input type="text" class="form-control" id="fpsOwnName" placeholder="Enter Owner Name">
+			  <label for="ratFpsCode">FPS Code</label>
+			  <input type="text" class="form-control" id="fpsOwnName" placeholder="Enter FPS Code">
 			</div>
-
-			<div class="form-group">
-			  <label for="fpsOwnGen">Owner Gender</label>
-			  <select class="form-control" id="fpsOwnGen">
-				  <option>Male</option>
-				  <option>Female</option>
-				  <option>Others</option>
-			   </select>
-			</div>
-
-
-			<div class="form-group" style="margin-left: 40px;display: inline-block;width: 15%;">
-			  <label for="dno">Door Number</label>
-			  <input type="text" class="form-control" id="dno" placeholder="Enter Door No">
-			</div>
-		  
-			<div class="form-group"style="display: inline-block;width: 35%;">
-			  <label for="st">Street Name</label>
-			  <input type="text" class="form-control" id="st" placeholder="Enter Street Name">
-			</div>
-
-			<div class="form-group" style="display: inline-block;width: 41%;">
-			  <label for="area">Area</label>
-			  <input type="text" class="form-control" id="area" placeholder="Enter Area">
-			</div>
-
-			<div class="form-group" style="margin-left:40px; display: inline-block;width: 38%;"> 
-			  <label for="City">City</label>
-			  <input type="text" class="form-control" id="city" placeholder="Enter City">
-			</div>
-
-			<div class="form-group" style="display: inline-block;width: 40%;">
-			  <label for="state">State</label>
-			  <input type="text" class="form-control" id="state" placeholder="Enter State">
-			</div>
-
-			<div class="form-group" style="display: inline-block;width: 15%;">
-			  <label for="pinc">Pin Code</label>
-			  <input type="text" class="form-control" id="pinc" placeholder="Enter Pin Code">
-			</div>
-
-			<div class="form-group" style="display: inline-block;width: 15%;">
-			  <label for="ownPic">Upload Owner's Photo</label>
-			  <input type="file" id="ownPic" name="filename">
-			</div>
-			<br>
-			<button type="button" class="btn btn-outline-danger" style="margin-top: 20px;margin-left: 45%;">Submit</button>
-		  
 	  </fieldset>
+	  <button type="button" class="btn btn-outline-danger" style="margin-top: 20px;margin-bottom:20px;margin-left: 45%;">Issue Ration Card</button>
+				
 	  </form>
 	</section>
 </body>
