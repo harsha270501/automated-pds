@@ -20,11 +20,7 @@
         return;
     }
      
-    $fpslic=$_POST['fpslic'];
-    $fpsName=$_POST['fpsName'];
-    $offEmail=$_POST['offEmail'];
-    $fpsOwnName=$_POST['fpsOwnName'];
-    $fpsOwnGen=$_POST['fpsOwnGen'];
+    $stkname=$_POST['stkname'];
     
     $dno=$_POST['dno'];
     $st=$_POST['st'];
@@ -33,9 +29,11 @@
     $state=$_POST['state'];
     $pinc=$_POST['pinc'];
     
-    $ownPic=$_POST['ownPic'];
+    $stkmob=$_POST['stkmob'];
+    $stkph=$_POST['stkph'];
+    $stkem=$_POST['stkem'];
     
-    $FPSApplicationQuery = "insert into dbname (fpslic,fpsName,fpsOwnGen,fpsOwnName,offEmail,ownPic,dno,st,area,area,city,state,pinc) values('$fpslic','$fpsName','$fpsOwnGen','$fpsOwnName','$offEmail','$ownPic','$dno','$st','$area','$city','$state','$pinc')";
+    $StakeHolderQuery = "insert into dbname (stkname,dno,st,area,area,city,state,pinc,stkmob,stkph,stkem) values('$stkname','$dno','$st','$area','$city','$state','$pinc','$stkmob','$stkph','$stkem')";
 
     mysqli_query($connection, $FPSApplicationQuery);
 
