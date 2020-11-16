@@ -33,9 +33,9 @@
     $state=$_POST['state'];
     $pinc=$_POST['pinc'];
     
-    $ownPic=$_POST['ownPic'];
     
-    $FPSApplicationQuery = "insert into dbname (fpslic,fpsName,fpsOwnGen,fpsOwnName,offEmail,ownPic,dno,st,area,area,city,state,pinc) values('$fpslic','$fpsName','$fpsOwnGen','$fpsOwnName','$offEmail','$ownPic','$dno','$st','$area','$city','$state','$pinc')";
+    
+    $FPSApplicationQuery = "insert into dbname (fpslic,fpsName,fpsOwnGen,fpsOwnName,offEmail,dr,st,area,area,city,state,pinc) values('$fpslic','$fpsName','$fpsOwnGen','$fpsOwnName','$offEmail','$ownPic','$dno','$st','$area','$city','$state','$pinc')";
 
     mysqli_query($connection, $FPSApplicationQuery);
 

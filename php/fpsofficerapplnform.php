@@ -9,9 +9,9 @@
 
 <?php 
     $host = "127.0.0.1";
-    $databaseName = "dbname";
-    $username = "";
-    $password = "";
+    $databaseName = "db_sample";
+    $username = "root";
+    $password = "password";
 
     $connection = mysqli_connect($host, $username, $password, $databaseName);
     if ($connection == false) {
@@ -19,29 +19,36 @@
         echo "Error initiating connection with database: " . $error;
         return;
     }
+
+    else
+    {
+        echo "Connection ok";
+    }
      
     $offid=$_POST['offid'];
     $offName=$_POST['offName'];   
     $offEmail=$_POST['offEmail'];
     $offph=$_POST['offph'];
-    $Occupation=$_POST['Occupation'];
     $offRank=$_POST['offRank'];
     $offFPSCode=$_POST['offFPSCode'];
 
-    $FPSOfficerApplicationQuery = "insert into dbname (offid,offName,offEmail,offph,Occupation,offRank,offFPSCode) values('$offid','$offName','$offEmail','$offph','$Occupation','$offRank','$offFPSCode')";
+    $FPSOfficerApplicationQuery = "insert into Officer(Officer_ID) values('$offid')";
+
 
     mysqli_query($connection, $FPSOfficerApplicationQuery);
 
     $insertedID = mysqli_insert_id($connection);
-    ?><body>
+
+    $return= mysqli_query($connection, $FPSOfficerApplicationQuery);
+    ?>
+    <body>
         <div class="container">
             <?php
-            echo mysqli_error($connection);
             echo "\nApplication submitted successfully";
             ?>
-            <a href="fpsofficerappln.html"><input type="button" value="Return" class="btn btn-primary " /></a>
+            <a href="../html/fpsofficerappln.html"><input type="button" value="Return" class="btn btn-primary " /></a>
         </div>
-        </body>
+    </body>
     <?php
     
     mysqli_close($connection);
