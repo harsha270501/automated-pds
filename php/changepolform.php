@@ -9,8 +9,8 @@
 
 <?php 
     $host = "127.0.0.1";
-    $databaseName = "pds";
-    $username = "root";
+    $databaseName = "dbname";
+    $username = "";
     $password = "";
 
     $connection = mysqli_connect($host, $username, $password, $databaseName);
@@ -20,24 +20,39 @@
         return;
     }
      
-    $fpslic=$_POST['fpslic'];
-    $fpsName=$_POST['fpsName'];
-    $offEmail=$_POST['offEmail'];
-    $fpsOwnName=$_POST['fpsOwnName'];
-    $fpsOwnGen=$_POST['fpsOwnGen'];
-    
+    $appname=$_POST['appname'];
+    $fhname=$_POST['fhname'];
     $dno=$_POST['dno'];
     $st=$_POST['st'];
     $area=$_POST['area'];
     $city=$_POST['city'];
     $state=$_POST['state'];
     $pinc=$_POST['pinc'];
-    
-    
-    
-    $FPSApplicationQuery = "insert into fpsoffice (fpslic,fpsName,fpsOwnGen,fpsOwnName,offEmail,dr,st,area,area,city,state,pinc) values('$fpslic','$fpsName','$fpsOwnGen','$fpsOwnName','$offEmail','$ownPic','$dno','$st','$area','$city','$state','$pinc')";
 
-    mysqli_query($connection, $FPSApplicationQuery);
+    $bgrp=$_POST['bgrp'];
+    $dob=$_POST['dob'];
+    $marstatus=$_POST['marstatus'];
+    $phych=$_POST['phych'];
+    $email=$_POST['email'];
+    $caste=$_POST['caste'];
+    $Occupation=$_POST['Occupation'];
+    $aadh=$_POST['aadh'];
+    $vid=$_POST['vid'];
+    $pcard=$_POST['pcard'];
+    $dlnum=$_POST['dlnum'];
+
+    $bname=$_POST['bname'];
+    $accnum=$_POST['accnum'];
+    $ifsc=$_POST['ifsc'];
+    
+    $resstatus=$_POST['resstatus'];
+    $ecostatus=$_POST['ecostatus'];
+    $oldration=$_POST['oldration'];
+    
+
+    $ApplicationQuery = "insert into dbname (appname,fhname,dno,st,area,area,city,state,pinc,bgrp,dob,marstatus,phych,email,caste,Occupation,aadh,vid,pcard,dlnum,bname,accnum,ifsc,resstatus,ecostatus,oldration) values('$appname','$fhname','$dno','$st','$area','$area','$city','$state','$pinc','$bgrp','$dob','$marstatus','$phych','$email','$caste','$Occupation','$aadh','$vid','$pcard','$dlnum','$bname','$accnum','$ifsc','$resstatus','$ecostatus','$oldration')";
+
+    mysqli_query($connection, $ApplicationQuery);
 
     $insertedID = mysqli_insert_id($connection);
     ?><body>
@@ -46,7 +61,7 @@
             echo mysqli_error($connection);
             echo "\nApplication submitted successfully";
             ?>
-            <a href="fpsofficeappln.html"><input type="button" value="Return" class="btn btn-primary " /></a>
+            <a href="appln.html"><input type="button" value="Return" class="btn btn-primary " /></a>
         </div>
         </body>
     <?php
