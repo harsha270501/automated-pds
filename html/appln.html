@@ -26,9 +26,12 @@
 	</nav>
 	<section id="Dashboard"> 
 		
-				<form action="/php/applnform.php" method="POST">
+				<form action="../php/applnform.php" method="POST">
 					<fieldset class="disp-form" id="disp-common">
-					  
+						<div class="form-group" style="margin-left: 40px;display: inline-block;width: 46%;">
+							<label for="ratid">Application Code</label>
+							<input type="text" class="form-control" id="ratid" name="ratid" placeholder="Enter Applicant name">
+						  </div>
 					  <div class="form-group" style="margin-left: 40px;display: inline-block;width: 46%;">
 					    <label for="appname">Applicant Name</label>
 					    <input type="text" class="form-control" id="appname" name="appname" placeholder="Enter Applicant name">
@@ -68,6 +71,29 @@
 					    <label for="pinc">Pin Code</label>
 					    <input type="text" class="form-control" id="pinc" name="pinc" placeholder="Enter Pin Code">
 					  </div>
+
+					  <div class="form-group">
+						<label for="nfsacat">NFSA Category</label>
+						<select class="form-control" id="nfsacat" name="nfsacat">
+						  <option value="1"> Priority Household</option>
+						  <option value="0">Non-Priority Household</option>
+						</select>
+					  </div>
+		
+					 <div class="form-group">
+					  <label for="locid">Location ID</label>
+					  <input type="text" class="form-control" id="locid" name="locid" placeholder="Enter Location ID">
+					</div>
+		
+					<div class="form-group">
+					  <label for="bplid">BPL Family ID</label>
+					  <input type="text" class="form-control" id="bplid" name="bplid" placeholder="Enter BPL Family ID">
+					</div>
+				  
+					<div class="form-group">
+					  <label for="ratFpsCode">FPS Code</label>
+					  <input type="text" class="form-control" id="ratFpsCode" name="ratFpsCode" placeholder="Enter FPS Code">
+					</div>
 					
 					</fieldset>
 				
@@ -78,6 +104,10 @@
 				
 				  <fieldset class="disp-form" id="disp-personal">
 				  <legend style="color: white; width: 30%; margin-left: 10px;border-radius:5px; text-align: center;">Personal Details</legend>
+				  <div class="form-group">
+				    <label for="fmemid">Family Member ID</label>
+				    <input type="text" class="form-control" id="fmemid" name="fmemid" placeholder="Family Member ID">
+				  </div> 
 				  <div class="form-group" style="margin-left: 20px;display: inline-block;width: 40%;">
 				    <label for="gender">Gender</label>
 				    <select class="form-control" id="gender" name="gender">
@@ -114,6 +144,11 @@
 				  <div class="form-group" style="margin-left:20px;width: 95%;">
 				    <label for="email">Email ID</label>
 				    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email ID">
+				  </div>
+
+				  <div class="form-group" style="margin-left:20px;width: 95%;">
+				    <label for="ph">Phone number</label>
+				    <input type="ph" class="form-control" id="ph" name="ph" placeholder="Enter Email ID">
 				  </div>
 				
 				  <div class="form-group"style="margin-left: 20px;display: inline-block;width: 46%;">

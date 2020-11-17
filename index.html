@@ -1,93 +1,151 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en" dir="ltr">
 <head>
-	<title>Dashboard</title>
-	<link rel="stylesheet" type="text/css" href="/css/tpdsdstyle.css">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" > </script>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><script src='https://kit.fontawesome.com/a076d05399.js'></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<title>Targeted Public Distribution System</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+   <!-- Optional theme -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-</head>
-<body style="background-color: #FFFFF0">
-	<nav class="navbar navbar-expand-lg navbar-dark">
-		  <a class="navbar-brand" href="#"><h3>TPDS Officer Dashboard</h3></a>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-		    <ul class="navbar-nav ml-auto">
-		      <li class="nav-item ">
+   <link rel="stylesheet" href="css/main.css">
 
-		        <a class="nav-link" href="/html/appln.html" style="text-decoration: none; color: white;">Profile<span class="sr-only">(current)</span></a>
-	      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="login.html" style="text-decoration: none;color: white;">Logout</a>
-		      </li>
-		    </ul>
-		  </div>
-	</nav>
-
-	<section id="Dashboard"> 
-		<div class="gallery">
-			<div class="carddet" id="card1">
-				<div id="card-image">
-					
-				</div>
-				<div id="card-title">
-					<h5><a href="/html/reviewappln.html" style="text-decoration: none; color: white;">Review Application for New card</a></h5>
-				</div>
-			</div>
-			<div class="carddet" id="card2">
-				<div id="card-image">
-					
-				</div>
-				<div id="card-title">
-					<h5><a href="#" style="text-decoration: none; color: white;">Review Application for Editing Details</a></h5>
-				</div>
-			</div>
-			<div class="carddet" id="card3">
-				<div id="card-image">
-					
-				</div>
-				<div id="card-title">
-					<h5><a href="/html/fpsofficeappln.html" style="text-decoration: none; color: white;">Register New FPS Office</a> </h5>
-				</div>
-			</div>
-
-			<div class="carddet" id="card4">
-				<div id="card-image">
-					
-				</div>
-				<div id="card-title">
-					<h5><a href="/html/fpsofficerappln.html" style="text-decoration: none; color: white;">Register New FPS Officer</a></h5> 
-				</div>
-			</div>
-
-			<div class="carddet" id="card5">
-				<div id="card-image">
-					
-				</div>
-				<div id="card-title">
-					<h5><a href="/html/stakeholderauth.html" style="text-decoration: none; color: white;">Authorize Stakeholder</a></h5> 
-				</div>
-			</div>
-
-			<div class="carddet" id="card6">
-				<div id="card-image">
-					
-				</div>
-				<div id="card-title">
-					<h5><a href="/html/changepol.html" style="text-decoration: none; color: white;">Change Policy</a></h5> 
-				</div>
-			</div>
-		</div>
+ </head>
+   <body>
 
 
-	</section>
+<h1 >
+
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="home/bg1.jpg" style="width:70%;height:40%;" >
+
+          <h1 class="text-center"style="margin-left:35%;">Government of India launched the Targeted Public Distribution System (TPDS) with focus on
+the poor. </h1>
+        </div>
+
+        <div class="item">
+          <img src="home/emb.jpg"  style="width:70%;height:40%;">
+
+          <h1 class="text-center"style="margin-left:35%;"> Government ensures to distribute rations at a subsidized
+  price to the vulnerable sections of society. </h1>
+
+        </div>
+
+        <div class="item">
+          <img src="home/t2.jpg" style="width:70%;">
+<h1  class="text-center"style="margin-left:35%;">TPDS system and how it works</h1>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+
+    </div>
+  </div>
+
+</h1>
+<div id="cover"><nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <a class="navbar-brand js-scroll-trigger" href="/home/sample.html">HOME</a>
+
+<div class="container">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav text-uppercase ml-auto">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="home/about.html">ABOUT</a>
+      </li>
+      <li class="nav-item">
+
+    <li class="dropdown nav-link js-scroll-trigger dropbtn">
+      <a href="" style="color: #de9e48;">Login</a>
+      <div class="dropdown-content">
+        <a href="/html/fpslogin.html">FPS Owner</a>
+        <a href="/html/offflogin.html">TPDS Owner</a>
+        <a href="/html/login.html"></a>
+      </div>
+    </li>
+
+
+    </ul>
+  </div>
+</div>
+</nav>
+<div class="text-center">
+  <br> &nbsp;
+<div style="display: inline-block;width:20%;margin-left:20px;">
+  <h2>  Dedicated to recognise, target and serve the poor.. <br><br>
+Bringing commodities to the Below Poverty Line community at subsidized rates.. <br><br>
+Since 1997
+</h2>
+</div>
+<div style="display:inline-block;margin-top:10px;">
+  <img src="home/shop.png">
+</div>
+</div>
+
+<div>
+
+  
+
+
+
+<!-- <h4 class="wordCarousel text-justify">
+  <br>&nbsp;
+  <span class="wordCarousel" style="color:#e3d477;"> <strong>TARGET AUDIENCE : </strong></span>
+        <div class="text-justify">
+<!      Use classes 2,3, or 4 to match the number of words -->
+            <!-- <ul class="flip4 ">
+                <li>Administrative governance providers</li>
+                <li>Food Corporation of India</li>
+                <li>Department of Food and Public Distribution</li>
+                <li>Welfare scheme providers </li>
+            </ul>
+        </div>
+    </h4> --> -->
+
+</div>
+</div>
 </body>
+
+<script type="text/javascript">
+  $(window).scroll(function(e) {
+    frames = 17;
+    step = ($("body").height() - $(window).height()) / frames;
+    scrollStep = parseInt($(window).scrollTop() / step);
+    maskPosition = 100 - ( 100 / frames * scrollStep);
+    $("#cover").css({
+      "mask-position": maskPosition + "% 50%",
+      "-webkit-mask-position": maskPosition + "% 50%"
+    });
+  });
+
+  /* Just for CodePen Thumbnail */
+  $("html, body").animate({ scrollTop: $(document).height() - $(window).height() }, 1200).queue(function(next) {
+    $("html, body").animate({ scrollTop: 0 }, 1200);
+    next();
+  });
+
+
+</script>
+
 </html>

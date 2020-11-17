@@ -22,23 +22,24 @@
               <div class="reg-box" id="reg-box">
                 <div class="reg-form" id="reg-form">
                   
-                  <h3>User Login</h3>
-                  <form style="margin-top: 10%" method="POST" action="../php/userlogin.php">
+                  <h3>TPDS Officer Login</h3>
+                  <form style="margin-top: 10%" action="../php/offloginform.php" method="POST">
                 
                   <div class="form-group">
-                      <label for="User-Name">User Name</label>
-                      <input type="text" class="form-control" id="User Name" name="un" placeholder="User Name">
+                      <label for="un">User Name</label>
+                      <input type="text" class="form-control" name="un" id="un" placeholder="User Name">
                   </div>
                       
                   <div class="form-group">
-                      <label for="User-Phone-No">Password</label>
-                      <input type="Password" class="form-control" id="User Phone No" name="pwd" placeholder="User Phone No">
+                      <label for="pwd">Password</label>
+                      <input type="Password" class="form-control" name="pwd" id="pwd" placeholder="User Phone No">
                   </div>
                       
 
-                  <input type="submit" name="login" value="Login" class="btn btn-primary" style="margin-top: 10%;"><a href="dashboard.html" style="text-decoration: none;color: white;">Log In</a></button>
-                 
+                <input type="submit" name="login" value="Login" class="btn btn-primary" style="margin-top: 10%;">
+             
                   </form>
+                  
                 </div>
               </div>
             </div>

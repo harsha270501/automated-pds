@@ -38,39 +38,29 @@
 	</nav>
 		<section id="Dashboard">
         
-		<form >
+		<form method="POST" action="../php/changepolform.php" >
 				  <fieldset class="disp-form" id="disp-fps">
 				  <legend style="color: white; width: 30%; margin-left: 10px;border-radius:5px; text-align: center;">FPS OFFICE</legend>
 				  
 
+				  
 				  <div class="form-group">
 				    <label for="fpslic">Enter Policy ID</label>
-				    <input type="text" class="form-control" id="fpslic" placeholder="Enter FPS Lic.No">
+				    <input type="text" class="form-control" id="fpslic" name="fpslic" placeholder="Enter FPS Lic.No">
+				  </div>
+
+				  <div class="form-group">
+				    <label for="tpdsid">Confirm your tpds Office ID</label>
+				    <input type="text" class="form-control" id="tpdsid" name="tpdsid" placeholder="Enter FPS Lic.No">
 				  </div>
                   </fieldset>
 
-                  <button type="button" class="btn btn-outline-danger" style="margin-top: 20px;margin-bottom:20px;margin-left: 45%;">Review Policy details</button>
+                  <input type="submit" value="View and Update" class="btn btn-outline-danger" style="margin-top: 20px;margin-bottom:20px;margin-left: 45%;">
         </form>
-        <button type="button" class="btn btn-outline-danger" id="allchangebtn" style="margin-top: 20px;margin-bottom:20px;margin-left: 37%;display:inline-block;">Apply to all FPS</button>
-        <button type="button" class="btn btn-outline-danger" id="selchangebtn" style="margin-top: 20px;margin-bottom:20px;margin-left: 5%;display:inline-block;" onclick="dispoptions()">Select FPS Codes</button>
-        <form style="display: none;" id="formopt">
-            <fieldset class="disp-form" id="disp-fps" di>
-            
+        
+        
+    
 
-                <div class="form-group">
-                    <label for="fpscodes">Select the applicable FPS Code</label>
-                    <select multiple class="form-control" id="fpscodes">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-            </fieldset>
-
-            <button type="button" class="btn btn-outline-danger" style="margin-top: 20px;margin-bottom:20px;margin-left: 45%;">Apply Changes</button>
-  </form>
 
 	</section>
 </body>
