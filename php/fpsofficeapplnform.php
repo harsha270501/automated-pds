@@ -5,9 +5,15 @@
 
 <?php 
     $host = "127.0.0.1";
+<<<<<<< HEAD
     $databaseName = "db_sample";
     $username = "root";
     $password = "password";
+=======
+    $databaseName = "pds";
+    $username = "root";
+    $password = "";
+>>>>>>> 2b2c24c1cdae8a37ba99f7a784df1ac8bd5a3455
 
     $connection = mysqli_connect($host, $username, $password, $databaseName);
     if ($connection == false) {
@@ -32,7 +38,12 @@
     
     
     
+<<<<<<< HEAD
     $FPSApplicationQuery = "insert into fp_shop(fps_code,fps_lic_no, name,shop_num, own_name,own_gender, dno, street ,area,city,state, pin_code) values('$fpsCode','$fpslic','$fpsName','$fpsSNO','$fpsOwnName','$fpsOwnGen','$dno','$st','$area','$city','$state','$pinc')";
+=======
+    
+    $FPSApplicationQuery = "insert into fpsoffice (fpslic,fpsName,fpsOwnGen,fpsOwnName,offEmail,dr,st,area,area,city,state,pinc) values('$fpslic','$fpsName','$fpsOwnGen','$fpsOwnName','$offEmail','$ownPic','$dno','$st','$area','$city','$state','$pinc')";
+>>>>>>> 2b2c24c1cdae8a37ba99f7a784df1ac8bd5a3455
 
     mysqli_query($connection, $FPSApplicationQuery);
 
