@@ -1,17 +1,13 @@
 <html>
     <head>
     <link rel="stylesheet" href="css/custom.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
 
 <?php 
     $host = "127.0.0.1";
-    $databaseName = "dbname";
-    $username = "";
-    $password = "";
+    $databaseName = "db_sample";
+    $username = "root";
+    $password = "password";
 
     $connection = mysqli_connect($host, $username, $password, $databaseName);
     if ($connection == false) {
@@ -19,10 +15,11 @@
         echo "Error initiating connection with database: " . $error;
         return;
     }
-     
-    $fpslic=$_POST['fpslic'];
+
+    $fpsCode=$_POST['fpsCode'];
+    $fpslic=(int)$_POST['fpslic'];
     $fpsName=$_POST['fpsName'];
-    $offEmail=$_POST['offEmail'];
+    $fpsSNO=(int)$_POST['fpsSNO'];
     $fpsOwnName=$_POST['fpsOwnName'];
     $fpsOwnGen=$_POST['fpsOwnGen'];
     
@@ -31,11 +28,11 @@
     $area=$_POST['area'];
     $city=$_POST['city'];
     $state=$_POST['state'];
-    $pinc=$_POST['pinc'];
+    $pinc=(int)$_POST['pinc'];
     
-    $ownPic=$_POST['ownPic'];
     
-    $FPSApplicationQuery = "insert into dbname (fpslic,fpsName,fpsOwnGen,fpsOwnName,offEmail,ownPic,st,area,area,city,state,pinc) values('$fpslic','$fpsName','$fpsOwnGen','$fpsOwnName','$offEmail','$ownPic','$st','$area','$city','$state','$pinc')";
+    
+    $FPSApplicationQuery = "insert into fp_shop(fps_code,fps_lic_no, name,shop_num, own_name,own_gender, dno, street ,area,city,state, pin_code) values('$fpsCode','$fpslic','$fpsName','$fpsSNO','$fpsOwnName','$fpsOwnGen','$dno','$st','$area','$city','$state','$pinc')";
 
     mysqli_query($connection, $FPSApplicationQuery);
 
@@ -44,7 +41,7 @@
         <div class="container">
             <?php
             echo mysqli_error($connection);
-            echo "\nApplication submitted successfully";
+            echo "\nFPOFFICE Application submitted successfully";
             ?>
             <a href="fpsofficeappln.html"><input type="button" value="Return" class="btn btn-primary " /></a>
         </div>

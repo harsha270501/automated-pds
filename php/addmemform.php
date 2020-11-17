@@ -13,6 +13,7 @@
     $username = "";
     $password = "";
 
+    $appcode=0;
     $connection = mysqli_connect($host, $username, $password, $databaseName);
     if ($connection == false) {
         $error = mysqli_connect_error();
@@ -20,15 +21,18 @@
         return;
     }
      
-    $appname=$_POST['appname'];
-    $fhname=$_POST['fhname'];
-    $dno=$_POST['dno'];
-    $st=$_POST['st'];
-    $area=$_POST['area'];
-    $city=$_POST['city'];
-    $state=$_POST['state'];
-    $pinc=$_POST['pinc'];
+    $sql = "SELECT max(appcode) FROM reviewappln";
+$result = $conn->query($sql);
 
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    $appcode=$row["max(appcode)"]+1;
+  }
+} else {
+  echo "0 results";
+}
+    $mname=$_POST['name'];
     $bgrp=$_POST['bgrp'];
     $dob=$_POST['dob'];
     $marstatus=$_POST['marstatus'];
@@ -41,40 +45,16 @@
     $pcard=$_POST['pcard'];
     $dlnum=$_POST['dlnum'];
 
-    $bname=$_POST['bname'];
-    $accnum=$_POST['accnum'];
-    $ifsc=$_POST['ifsc'];
     
-    $appcode=0;
-    $resstatus=$_POST['resstatus'];
-    $ecostatus=$_POST['ecostatus'];
-    $oldration=$_POST['oldration'];
+   
 
-    $sql = "SELECT max(appcode) FROM reviewappln";
-    $result = $conn->query($sql);
-    
-    if ($result->num_rows > 0) {
-      // output data of each row
-      while($row = $result->fetch_assoc()) {
-        $appcode=$row["max(appcode)"]+1;
-      }
-    } else {
-      echo "0 results";
-    }
-    $ApplicationQuery = "insert into reviewappln(appln_code,appname,fhname,dno,st,area,area,city,state,pinc,bname,accnum,ifsc,resstatus,ecostatus,oldration) values('$appcode','$appname','$fhname','$dno','$st','$area','$area','$city','$state','$pinc','$bgrp','$dob','$marstatus','$phych','$email','$caste','$Occupation','$aadh','$vid','$pcard','$dlnum','$bname','$accnum','$ifsc','$resstatus','$ecostatus','$oldration')";
+
+    $ApplicationQuery = "insert into reviewmem (appno,mname,bgrp,dob,marstatus,phych,email,caste,Occupation,aadh,vid,pcard,dlnum) values('$appcode','$mname','$bgrp','$dob','$marstatus','$phych','$email','$caste','$Occupation','$aadh','$vid','$pcard','$dlnum')";
 
     mysqli_query($connection, $ApplicationQuery);
 
     $insertedID = mysqli_insert_id($connection);
-    
-    
-    $ApplicationQuery = "insert into reviewmem (appno,mname,bgrp,dob,marstatus,phych,email,caste,Occupation,aadh,vid,pcard,dlnum) values('$appcode','$fhname','$bgrp','$dob','$marstatus','$phych','$email','$caste','$Occupation','$aadh','$vid','$pcard','$dlnum')";
-    mysqli_query($connection, $ApplicationQuery);
-
-    $insertedID = mysqli_insert_id($connection);
-    
-    ?>
-    <body>
+    ?><body>
         <div class="container">
             <?php
             echo mysqli_error($connection);
